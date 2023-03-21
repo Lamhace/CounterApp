@@ -1,0 +1,69 @@
+<template>
+    <div class="PageNotFound">
+        <h1>404</h1>
+        <h2>Page not found</h2>
+        <RouterLink to="/"><button>Go to home</button></RouterLink>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'PageNotFound'
+}
+</script>
+
+
+<style>
+.PageNotFound {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.PageNotFound button {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.PageNotFound button:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.PageNotFound button:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.PageNotFound button:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+</style>
